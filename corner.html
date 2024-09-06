@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .product-image {
+            flex: 1;
+            padding: 10px;
+            max-width: 50%;
+        }
+
+        .product-image img {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .product-details {
+            flex: 1;
+            padding: 10px;
+            max-width: 50%;
+        }
+
+        .product-name {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+        }
+        .price{
+            font-weight: bold;
+        }
+
+        .short-description, .detailed-description, .price, .features {
+            margin-bottom: 15px;
+        }
+
+        .buy-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .reviews {
+            margin-top: 20px;
+        }
+        .detailed-description{
+            animation: moveLeft 2s forwards;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
+        .short-description{
+            animation: moveLeft 2s forwards;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
+        @keyframes moveLeft{
+            from {
+                transform: translate(100vw);
+            }
+            to{
+                transform: translate(-10px);
+            }
+        }
+        .product-image{
+            animation: moveRight 2s backwards;
+        }
+        @keyframes moveRight{
+            from {
+                transform: translate(-500px);
+            }
+            to{
+                transform: translate(0px);
+            }
+        }
+        .features{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <!-- Product Image Section -->
+    <div class="product-image">
+        <img src="https://i.pinimg.com/236x/46/ed/7e/46ed7ef5562889add5a70b4ac20aa34e.jpg" height="442px" width="332px">
+        
+    </div>
+    
+    <!-- Product Details Section -->
+    <div class="product-details">
+        <div class="product-name">Modern Corner Study Set </div>
+        <div class="short-description">This is a short description of the product.</br>
+         <p> Elevate your workspace with our sleek and functional Modern Corner Study Set. This set features a spacious corner desk, a built-in bookshelf with both closed cabinets and open shelves, and two comfortable teal chairs. Crafted with high-quality materials, this set offers both style and practicality. Perfect for students, professionals, or anyone looking to create a dedicated study or home office space. </p></div>
+        <div class="detailed-description">
+           It is available at the most discounted price!! check it out :
+        </div>
+        <div class="price">₹7500</div>
+        <div class="features"> 
+            <ul>
+                <li>Corner desk for efficient space utilization</li>
+                <li>Built-in bookshelf with ample storage</li>
+                <li>Comfortable teal chairs</li>
+                <li>Modern, minimalist design</li>
+                <li>High-quality materials</li>
+            </ul>
+        </div>
+        <a href="#" class="buy-button">Buy Now</a>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Product Image Section -->
+    <div class="product-image">
+        <img src="https://i.pinimg.com/236x/2d/59/8c/2d598cfc43c0515ab09117223fa52789.jpg" height="442px" width="332px" >
+        
+    </div>
+    
+
+    <!-- Product Details Section -->
+    <div class="product-details">
+        <div class="product-name">Minimalist Corner Bedside Table with Built-in Shelving</div>
+        <div class="short-description">This is a short description of the product.</div>
+        <div class="detailed-description">
+            Elevate your bedroom with our sleek and functional Minimalist Corner Bedside Table. This piece features a built-in desk surface, perfect for working or reading, along with open shelves for storage. The clean lines and neutral tones create a minimalist aesthetic that complements any bedroom decor.
+        </div>
+        <div class="price">₹13000</div>
+        <div class="features">
+            <ul>
+                <li>Corner design for efficient space utilization</li>
+                <li>Built-in desk surface</li>
+                <li>Open shelving for storage</li>
+                <li>Minimalist aesthetic</li>
+                <li>High-quality materials</li>
+
+            </ul>
+        </div>
+        <a href="#" class="buy-button">Buy Now</a>
+    </div>
+</div>
+ 
+<div class="container">
+    <!-- Product Image Section -->
+    <div class="product-image">
+        <img src="https://i.pinimg.com/236x/93/cc/e3/93cce375a344f23c13c885791575244e.jpg" height="442px" width="332px">
+        
+    </div>
+    
+
+    <!-- Product Details Section -->
+    <div class="product-details">
+        <div class="product-name">Modern Corner Study Set </div>
+        <div class="short-description">This is a short description of the product.</br>
+         <p> Elevate your workspace with our stylish and functional Modern Minimalist Study Corner. This sleek design is perfect for small bedrooms or dedicated home offices. </p></div>
+        <div class="detailed-description">
+           It is available at the most discounted price!! check it out :
+        </div>
+        <div class="price">₹7500</div>
+        <div class="features">
+            <ul>
+                <li>Unique and Eye-Catching Design</li>
+                <li>Vibrant Color Palette</li>
+                <li>Durable and Long-Lasting</li>
+                <li>Sleek white desk:</li>
+                <li>Textured wall and warm wood flooring</li>
+            </ul>
+        </div>
+        <a href="#" class="buy-button">Buy Now</a>
+    </div>
+</div>
+
+
+</body>
+</html>

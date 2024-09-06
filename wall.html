@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .product-image {
+            flex: 1;
+            padding: 10px;
+            max-width: 50%;
+        }
+
+        .product-image img {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .product-details {
+            flex: 1;
+            padding: 10px;
+            max-width: 50%;
+        }
+
+        .product-name {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+        }
+        .price{
+            font-weight: bold;
+        }
+
+        .short-description, .detailed-description, .price, .features {
+            margin-bottom: 15px;
+        }
+
+        .buy-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .reviews {
+            margin-top: 20px;
+        }
+        .detailed-description{
+            animation: moveLeft 2s forwards;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
+        .short-description{
+            animation: moveLeft 2s forwards;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
+        @keyframes moveLeft{
+            from {
+                transform: translate(100vw);
+            }
+            to{
+                transform: translate(-10px);
+            }
+        }
+        .product-image{
+            animation: moveRight 2s backwards;
+        }
+        @keyframes moveRight{
+            from {
+                transform: translate(-500px);
+            }
+            to{
+                transform: translate(0px);
+            }
+        }
+        .features{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <!-- Product Image Section -->
+    <div class="product-image">
+        <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/wall-decoration/w/p/x/metal-wall-decor-wall-arts-for-home-living-room-hotel-decoration-original-imagqhzbtq8qhy4s.jpeg?q=90&crop=false" height="442px" width="332px" alt="Product Image">
+        
+    </div>
+    
+
+    <!-- Product Details Section -->
+    <div class="product-details">
+        <div class="product-name">Living room white glass temper design </div>
+        <div class="short-description">This is a short description of the product.</br>
+         <p> This eye-catching metal wall art features a collection of overlapping discs in various sizes, finished in a mix of vibrant teal and gold hues with a textured, aged effect. The discs are arranged in an asymmetrical pattern, creating a dynamic and visually interesting composition. The piece is perfect for adding a touch of modern elegance to any room. </p></div>
+        <div class="detailed-description">
+           It is available at the most discounted price!! check it out :
+        </div>
+        <div class="price">₹ 7500</div>
+        <div class="features">
+            <ul>
+                <li>Unique and Eye-Catching Design</li>
+                <li>Vibrant Color Palette</li>
+                <li>Durable and Long-Lasting</li>
+            </ul>
+        </div>
+        <a href="#" class="buy-button">Buy Now</a>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Product Image Section -->
+    <div class="product-image">
+        <img src="https://www.epsinteriorindustries.com/wp-content/uploads/2023/11/Wall-decor.jpg">
+        
+    </div>
+    
+
+    <!-- Product Details Section -->
+    <div class="product-details">
+        <div class="product-name">Living Room Wall Design</div>
+        <div class="short-description">This is a short description of the product.</div>
+        <div class="detailed-description">
+            This serene living room features a calming atmosphere with a focus on coastal chic design. The white walls are adorned with beach-themed artwork, and a rustic wooden TV console adds natural warmth. Potted plants bring life and freshness to the space, while the overall aesthetic creates a relaxed and inviting environment.
+        </div>
+        <div class="price">₹ 7000</div>
+        <div class="features">
+            <ul>
+                <li>Beach-Themed Decor</li>
+                <li>Natural Materials</li>
+                <li>Abundant Greenery</li>
+            </ul>
+        </div>
+        <a href="#" class="buy-button">Add to cart</a>
+    </div>
+</div>
+
+</body>
+</html>
